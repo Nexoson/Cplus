@@ -1,0 +1,46 @@
+# Project: Cplus_Learning
+# Makefile created by Dev-C++ 5.11
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = HelloCplus.o BasicVarSize.o TypedefDemo.o CplusEnum.o VarDemo01.o VarDemo02.o VarDemo03.o
+LINKOBJ  = HelloCplus.o BasicVarSize.o TypedefDemo.o CplusEnum.o VarDemo01.o VarDemo02.o VarDemo03.o
+LIBS     = -L"F:/devTools/Dev-Cpp/MinGW64/lib" -L"F:/devTools/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc -pg
+INCS     = -I"F:/devTools/Dev-Cpp/MinGW64/include" -I"F:/devTools/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"F:/devTools/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
+CXXINCS  = -I"F:/devTools/Dev-Cpp/MinGW64/include" -I"F:/devTools/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"F:/devTools/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"F:/devTools/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
+BIN      = Cplus_Learning.exe
+CXXFLAGS = $(CXXINCS) -pg
+CFLAGS   = $(INCS) -pg
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+HelloCplus.o: HelloCplus.cpp
+	$(CPP) -c HelloCplus.cpp -o HelloCplus.o $(CXXFLAGS)
+
+BasicVarSize.o: BasicVarSize.cpp
+	$(CPP) -c BasicVarSize.cpp -o BasicVarSize.o $(CXXFLAGS)
+
+TypedefDemo.o: TypedefDemo.cpp
+	$(CPP) -c TypedefDemo.cpp -o TypedefDemo.o $(CXXFLAGS)
+
+CplusEnum.o: CplusEnum.cpp
+	$(CPP) -c CplusEnum.cpp -o CplusEnum.o $(CXXFLAGS)
+
+VarDemo01.o: VarDemo01.cpp
+	$(CPP) -c VarDemo01.cpp -o VarDemo01.o $(CXXFLAGS)
+
+VarDemo02.o: VarDemo02.cpp
+	$(CPP) -c VarDemo02.cpp -o VarDemo02.o $(CXXFLAGS)
+
+VarDemo03.o: VarDemo03.cpp
+	$(CPP) -c VarDemo03.cpp -o VarDemo03.o $(CXXFLAGS)
