@@ -4,8 +4,8 @@
 CPP      = g++.exe
 CC       = gcc.exe
 WINDRES  = windres.exe
-OBJ      = HelloCplus.o BasicVarSize.o TypedefDemo.o CplusEnum.o VarDemo01.o VarDemo02.o VarDemo03.o VarDemo04.o VarDemo05.o
-LINKOBJ  = HelloCplus.o BasicVarSize.o TypedefDemo.o CplusEnum.o VarDemo01.o VarDemo02.o VarDemo03.o VarDemo04.o VarDemo05.o
+OBJ      = HelloCplus.o BasicVarSize.o TypedefDemo.o CplusEnum.o VarDemo01.o VarDemo02.o VarDemo03.o VarDemo04.o VarDemo05.o VarDemo06.o VarDemo07.o VarDemo08.o
+LINKOBJ  = HelloCplus.o BasicVarSize.o TypedefDemo.o CplusEnum.o VarDemo01.o VarDemo02.o VarDemo03.o VarDemo04.o VarDemo05.o VarDemo06.o VarDemo07.o VarDemo08.o
 LIBS     = -L"F:/devTools/Dev-Cpp/MinGW64/lib" -L"F:/devTools/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc -pg
 INCS     = -I"F:/devTools/Dev-Cpp/MinGW64/include" -I"F:/devTools/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"F:/devTools/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
 CXXINCS  = -I"F:/devTools/Dev-Cpp/MinGW64/include" -I"F:/devTools/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"F:/devTools/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"F:/devTools/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
@@ -50,3 +50,12 @@ VarDemo04.o: VarDemo04.cpp
 
 VarDemo05.o: VarDemo05.cpp
 	$(CPP) -c VarDemo05.cpp -o VarDemo05.o $(CXXFLAGS)
+
+VarDemo06.o: VarDemo06.cpp
+	$(CPP) -c VarDemo06.cpp -o VarDemo06.o $(CXXFLAGS)
+
+VarDemo07.o: VarDemo07.cpp
+	$(CPP) -c VarDemo07.cpp -o VarDemo07.o $(CXXFLAGS)
+
+VarDemo08.o: VarDemo08.cpp
+	$(CPP) -c VarDemo08.cpp -o VarDemo08.o $(CXXFLAGS)
