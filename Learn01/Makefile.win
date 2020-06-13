@@ -4,8 +4,8 @@
 CPP      = g++.exe
 CC       = gcc.exe
 WINDRES  = windres.exe
-OBJ      = HelloCplus.o BasicVarSize.o TypedefDemo.o CplusEnum.o VarDemo01.o VarDemo02.o VarDemo03.o VarDemo04.o VarDemo05.o VarDemo06.o VarDemo07.o VarDemo08.o
-LINKOBJ  = HelloCplus.o BasicVarSize.o TypedefDemo.o CplusEnum.o VarDemo01.o VarDemo02.o VarDemo03.o VarDemo04.o VarDemo05.o VarDemo06.o VarDemo07.o VarDemo08.o
+OBJ      = HelloCplus.o BasicVarSize.o TypedefDemo.o CplusEnum.o VarDemo01.o VarDemo02.o VarDemo03.o VarDemo04.o VarDemo05.o VarDemo06.o VarDemo07.o VarDemo08.o VarDemo09.o VarDemo10.o VarDemo11.o VarDemo12.o VarDemo13.o VarDemo14.o VarDemo15.o
+LINKOBJ  = HelloCplus.o BasicVarSize.o TypedefDemo.o CplusEnum.o VarDemo01.o VarDemo02.o VarDemo03.o VarDemo04.o VarDemo05.o VarDemo06.o VarDemo07.o VarDemo08.o VarDemo09.o VarDemo10.o VarDemo11.o VarDemo12.o VarDemo13.o VarDemo14.o VarDemo15.o
 LIBS     = -L"F:/devTools/Dev-Cpp/MinGW64/lib" -L"F:/devTools/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc -pg
 INCS     = -I"F:/devTools/Dev-Cpp/MinGW64/include" -I"F:/devTools/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"F:/devTools/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
 CXXINCS  = -I"F:/devTools/Dev-Cpp/MinGW64/include" -I"F:/devTools/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"F:/devTools/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"F:/devTools/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
@@ -59,3 +59,24 @@ VarDemo07.o: VarDemo07.cpp
 
 VarDemo08.o: VarDemo08.cpp
 	$(CPP) -c VarDemo08.cpp -o VarDemo08.o $(CXXFLAGS)
+
+VarDemo09.o: VarDemo09.cpp
+	$(CPP) -c VarDemo09.cpp -o VarDemo09.o $(CXXFLAGS)
+
+VarDemo10.o: VarDemo10.cpp
+	$(CPP) -c VarDemo10.cpp -o VarDemo10.o $(CXXFLAGS)
+
+VarDemo11.o: VarDemo11.cpp
+	$(CPP) -c VarDemo11.cpp -o VarDemo11.o $(CXXFLAGS)
+
+VarDemo12.o: VarDemo12.cpp
+	$(CPP) -c VarDemo12.cpp -o VarDemo12.o $(CXXFLAGS)
+
+VarDemo13.o: VarDemo13.cpp
+	$(CPP) -c VarDemo13.cpp -o VarDemo13.o $(CXXFLAGS)
+
+VarDemo14.o: VarDemo14.cpp
+	$(CPP) -c VarDemo14.cpp -o VarDemo14.o $(CXXFLAGS)
+
+VarDemo15.o: VarDemo15.cpp
+	$(CPP) -c VarDemo15.cpp -o VarDemo15.o $(CXXFLAGS)
